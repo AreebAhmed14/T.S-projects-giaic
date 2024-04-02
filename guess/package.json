@@ -1,6 +1,6 @@
 {
   "name": "jiya_guessing",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -16,6 +16,7 @@
     "@types/node": "^20.11.25"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "inquirer": "^9.2.15"
   }
 }
