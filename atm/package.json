@@ -1,22 +1,20 @@
 {
-  "name": "jiya_calc",
-  "version": "1.1.1",
+  "name": "al_areeb_atm",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "bin": "jiya.js",
+  "bin": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.11.25"
-  },
   "dependencies": {
-    "chalk": "^4.1.2",
-    "inquirer": "^9.2.15"
+    "inquirer": "^9.2.17"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7"
   }
 }

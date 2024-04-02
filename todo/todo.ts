@@ -11,7 +11,6 @@ while (condition) {
         message: "what you want to add..."
     });
     todo.push(ques.one);
-    console.log(todo);
     let question = await inquirer.prompt({
         name: "two",
         type: "list",
@@ -29,13 +28,29 @@ let questions = await inquirer.prompt({
     name: "three",
     type: "list",
     choices: ["yes", "no"],
-    message: "do you want to see your array in lining manner?...",
-});
+    message: "would you like to check your list.....",
+})
 if (questions.three === "yes") {
+    console.log("you are added these todos");
     for (let i = 0; i < todo.length; i++) {
         console.log(todo[i]);
     }
 }
 else {
     console.log("thank you for using this....");
+}
+
+let questionss = await inquirer.prompt({
+    name: "four",
+    type: "list",
+    choices: ["edit list", "exit"],
+    message: "what you want in last.....",
+})
+if(questionss.four==="edit list"){
+    let questionsss = await inquirer.prompt({
+        name: "five",
+        type: "list",
+        choices: ["todo[]"],
+        message: "would you like to check your list.....",
+    })
 }
