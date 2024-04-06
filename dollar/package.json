@@ -1,21 +1,23 @@
 {
-  "name": "al_areeb_atm",
-  "version": "1.1.2",
-  "description": "",
+  "name": "areeb_currency_exchange",
+  "version": "1.1.3",
   "main": "index.js",
   "type": "module",
-  "bin": "main.js",
+  "bin": "dollar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
+    "@types/node": "^20.12.4",
     "chalk": "^4.1.2",
     "inquirer": "^9.2.17"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.7"
+    "@types/inquirer": "^9.0.7",
+    "@types/jquery": "^3.5.29"
   }
 }

@@ -1,7 +1,6 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
-console.log("\nhey buddy! welcome to areeb's todo list.");
-console.log("in which you can make an array according to your mind set.\n");
+console.log("\nhey buddy! welcome to areeb's todo list.\n");
 let todo = [];
 let condition = true;
 while (condition) {
@@ -37,19 +36,29 @@ if (questions.three === "yes") {
     }
 }
 else {
-    console.log("thank you for using this....");
+    console.log("as your wish....");
 }
-let questionss = await inquirer.prompt({
-    name: "four",
+let edit = await inquirer.prompt({
+    name: "delet",
     type: "list",
-    choices: ["edit list", "exit"],
-    message: "what you want in last.....",
+    choices: ["delet item", "exit"],
+    message: "what you want....."
 });
-if (questionss.four === "edit list") {
-    let questions = await inquirer.prompt({
-        name: "three",
+if (edit.delet === "delet item") {
+    let select = await inquirer.prompt({
+        name: "todele",
         type: "list",
-        choices: ["todo[]"],
-        message: "would you like to check your list.....",
+        choices: todo,
+        message: "select item you want to delet....."
     });
+    for (let i = 0; i < todo.length; i++) {
+        if (select.todele == todo[i]) {
+            todo.splice(i, 1);
+            console.log("successfully Deleted");
+        }
+    }
 }
+else {
+    console.log("Thanks for using Areeb's todo list......");
+}
+console.log(todo);
