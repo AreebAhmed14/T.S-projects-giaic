@@ -1,6 +1,6 @@
 {
-  "name": "aqdas-calc",
-  "version": "1.0.0",
+  "name": "aqdas_calc",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
   "bin": "aqdas.js",

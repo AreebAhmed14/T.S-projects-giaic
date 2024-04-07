@@ -2,7 +2,7 @@
 import chalk from "chalk";
 import inquirer from "inquirer";
 let condition = true;
-console.log(chalk.blue("\nHey, welcome to Aqdas calculator.....\n"));
+console.log(chalk.blue("\nHey, welcome to Aqdas calculator.......\n"));
 
 while(condition){
 let cal1 = await inquirer.prompt({

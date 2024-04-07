@@ -48,7 +48,7 @@ while (condition) {
         message: chalk.cyan("\nwhat you want....")
     });
     if (conti.nu === chalk.red("exit")) {
-        console.log(chalk.magentaBright("Thanks for using jiya's calculatior...."));
+        console.log(chalk.magentaBright("Thanks for using jiya's calculator...."));
         condition = false;
     }
     else {
