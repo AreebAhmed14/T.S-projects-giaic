@@ -1,7 +1,6 @@
 {
-  "name": "areeb_todo",
+  "name": "areeb_list_todo",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "bin": "todo.js",
@@ -11,11 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.12.2"
+    "@types/node": "^20.12.5"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "inquirer": "^9.2.17"
   }
 }
