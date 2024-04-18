@@ -1,6 +1,6 @@
 {
-  "name": "areeb_word-count",
-  "version": "1.0.2",
+  "name": "areeb_word_counter",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "module",
   "bin": "count.js",
