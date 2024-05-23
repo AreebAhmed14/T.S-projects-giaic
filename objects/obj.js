@@ -1,4 +1,6 @@
 "use strict";
+//Mohammad Areeb Farooq....
+//-----------------------------------------------------------------------------------------
 //simple object.....
 let student = {
     name: "areeb",
@@ -21,8 +23,6 @@ let industry = {
     name: "areeb",
     depart: "IT",
     phone: 923709180147,
-    area: "abc area",
-    age2: 24
 };
 //---------------------------------------------------------------------------------------------
 //get whole keys, property of object....
@@ -55,3 +55,33 @@ let hard = {
 };
 let turn = hard.greet();
 console.log(turn);
+let exam = {
+    subject: "maths",
+    marks: 75,
+    duration: "3 hours",
+};
+console.log(Object.keys(exam).length); // 3 
+let prac = {
+    name: "areeb",
+    age: 17,
+    passion: "none",
+    work: "study",
+    dob: 952007,
+    message: function () {
+        console.log("be strong");
+    },
+    friends: {
+        schoolFriend: "adeel",
+        coachingFriend: "mursaleen",
+        alwaysAsFriend: "huzaifa"
+    }
+};
+console.log(prac.age); //17
+console.log(prac.friends.coachingFriend); //mursaleen
+console.log(prac.message()); //be strong
+console.log(Object.keys(prac));
+console.log(Object.keys(prac.friends));
+console.log(Object.keys(prac).length); // 7
+console.log(Object.keys(prac.friends).length); // 3
+console.log(Object.entries(prac));
+console.log(Object.entries(prac.friends).length);

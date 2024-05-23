@@ -1,3 +1,7 @@
+//Mohammad Areeb Farooq....
+
+//-----------------------------------------------------------------------------------------
+
 //simple object.....
 let student = {
     name:"areeb",
@@ -29,20 +33,17 @@ let students:{
 
 //------------------------------------------------------------------------------------------------
 
-//Alias type in obj...and unlimited properties add.....
+//Alias type in obj.......
 type Emp = {
     name: string,
     depart: string,
     phone:number,
-    [index:string|number]:string|number;//error not found if add proper in obj those not define in type.....
 } 
 //now we can use this type in our ever obj. in this way our code look like clean and readable.
 let industry:Emp = {
     name: "areeb",
     depart:"IT",
     phone:923709180147,
-    area: "abc area",
-    age2: 24
 }
 
 //---------------------------------------------------------------------------------------------
@@ -100,4 +101,65 @@ let hard:Func = {
 let turn = hard.greet()
 console.log(turn)
 
-//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+//lenght and add unlimited properties..........
+type Paper={
+    subject:string,
+    marks:number,
+    [index:string|number]:string|number; //error not found if add property in obj those not define in type.....
+}
+
+let exam:Paper = {
+    subject:"maths",
+    marks:75,
+    duration: "3 hours",
+}
+console.log(Object.keys(exam).length); // 3 
+
+//----------------------------------------------------------------------------------------------------------
+
+//for practice 
+type Practice = {
+    name:string,
+    age:number,
+    passion:string,
+    work:string,
+    dob:number,
+    message:()=>void,
+    friends:{
+        schoolFriend:string,
+        coachingFriend:string,
+        alwaysAsFriend:string,
+    }
+}
+
+let prac:Practice = {
+    name:"areeb",
+    age:17,
+    passion:"none",
+    work:"study",
+    dob:952007,
+    message:function(){
+        console.log("be strong");
+    },
+    friends:{
+        schoolFriend:"adeel",
+        coachingFriend:"mursaleen",
+        alwaysAsFriend:"huzaifa"
+    }
+}
+console.log(prac.age)//17
+console.log(prac.friends.coachingFriend)//mursaleen
+console.log(prac.message())//be strong
+console.log(Object.keys(prac))
+console.log(Object.keys(prac.friends))
+console.log(Object.keys(prac).length)// 7
+console.log(Object.keys(prac.friends).length)// 3
+console.log(Object.entries(prac))
+console.log(Object.entries(prac.friends))
+console.log(Object.entries(prac.friends).length)//3
+
+//----------------------------------------------------------------------------------------------------------------
+
+//-----------------------------------------------THE END----------------------------------------------------------
