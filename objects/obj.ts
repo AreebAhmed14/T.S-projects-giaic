@@ -119,6 +119,28 @@ console.log(Object.keys(exam).length); // 3
 
 //----------------------------------------------------------------------------------------------------------
 
+//intersection
+type Compulsury = {
+    name:string,
+    age:number,
+    phone:number,
+    cnic:number,
+}
+type optional = {
+    height:string,
+    nationality:string,
+}
+
+let intersection:Compulsury&optional = {
+    name:"areeb",
+    age:17,
+    phone:92317098147,
+    cnic:422016637982514,
+    height:"dont know",
+    nationality:"pakistani"
+}
+//----------------------------------------------------------------------------------------------------------
+
 //for practice 
 type Practice = {
     name:string,
